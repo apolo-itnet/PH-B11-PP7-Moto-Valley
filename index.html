@@ -22,6 +22,57 @@
 
     .btn-bg-primary {
       background-color: #E76F51;
+      border: none;
+      color: white;
+    }
+
+    .btn-padding {
+      padding: 1rem 2rem;
+    }
+
+    .hero-img-1{
+      background: 
+      linear-gradient(45.0deg, 
+      rgba(24, 24, 24, 0.8),
+      rgba(24, 24, 24, 0.6) 24.5%,
+      rgba(24, 24, 24, 0) 100%), 
+      url('/images/slider/bg/bike-bg-1.webp');
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+    }
+    .hero-img-2{
+      background: 
+      linear-gradient(45.0deg, 
+      rgba(24, 24, 24, 0.8),
+      rgba(24, 24, 24, 0.6) 24.5%,
+      rgba(24, 24, 24, 0) 100%), 
+      url('/images/slider/bg/bike-bg-2.webp');
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+    }
+    .hero-img-3{
+      background: 
+      linear-gradient(45.0deg, 
+      rgba(24, 24, 24, 0.8),
+      rgba(24, 24, 24, 0.6) 24.5%,
+      rgba(24, 24, 24, 0) 100%), 
+      url('/images/slider/bg/bike-bg-3.webp');
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+    }
+    .hero-img-4{
+      background: 
+      linear-gradient(45.0deg, 
+      rgba(24, 24, 24, 0.8),
+      rgba(24, 24, 24, 0.6) 24.5%,
+      rgba(24, 24, 24, 0) 100%), 
+      url('/images/slider/bg/bike-bg-4.webp');
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
     }
 
     .font-Poppins {
@@ -35,10 +86,10 @@
 <body class="font-Poppins">
 
   <!-- Header-Section -->
-  <header class=" min-h-screen   bg-slate-500">
+  <header id="home" class="flex flex-col min-h-screen bg-slate-500">
 
     <!-- Navbar-part -->
-    <nav class=" bg-slate-500 mb-10 text-white">
+    <nav class=" bg-slate-500 text-white lg:px-24 px-4">
     <div class="navbar">
 
       <div class="flex-1">
@@ -59,7 +110,7 @@
           </div>
           <ul
             tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            class="menu menu-sm dropdown-content bg-slate-500 rounded-box z-[1] mt-3 w-52 p-2 shadow">
             <li><a>Item 1</a></li>
             <li><a>Item 2</a></li>
             <li><a>Item 3</a></li>
@@ -70,113 +121,131 @@
 
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-2 gap-4">
-          <li><a>Home</a></li>
-          <li><a>Shop</a></li>
-          <li><a>News</a></li>
-          <li><a>Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
 
       <div class="">
-        <a class="btn btn-bg-primary text-white border-none">Login</a>
+        <a class="btn btn-bg-primary btn-padding">Login</a>
       </div>
     </div>
     </nav>
 
     <!-- Hero-Slider -->
-    <div class="carousel w-full text-white">
+    <div class="carousel flex-grow w-full text-white">
 
-      <div id="slide1" class="carousel-item relative w-full">
-        <div class="lg:flex justify-between items-center px-20 gap-4">
-          
-          <!-- image-content -->
-           <div class="lg:w-5/12">
-            <img src="images/slider/bike-1.webp" class="w-full" />
+      <!-- Slide 1 -->
+      <div id="slide1" class="carousel-item grid place-items-center relative w-full hero-img-1">
+        
+        <div class="flex flex-col md:flex-row items-center justify-center gap-12 px-4 lg:px-0">
+
+          <!-- Left Arrow Button -->
+          <div>
+            <a href="#slide4" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❮</a>
           </div>
+                 
           <!-- text-content -->
-          <div class="lg:w-3/6">
-            <h1 class="text-7xl font-bold mb-4">Ride-on R15 V4 <br> with Smile</h1>
-            <p class="leading-5 mb-4 w-5/6">Amet minim mollit non deserunt ullamco 
-              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-            <a class="btn btn-bg-primary text-white border-none">Purchase</a>
-
+          <div class="flex flex-col items-center text-center justify-center gap-8 lg:gap-4">
+            <h1 class="text-7xl lg:text-8xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+            <p class="mb-4 w-3/4 mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <a class="btn btn-bg-primary btn-padding">Purchase</a>
+           </div>
+           
+          <!-- Right Arrow Button -->
+           <div>
+            <a href="#slide2" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❯</a>
            </div>
 
         </div>
         
-        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide4" class="btn btn-circle">❮</a>
-          <a href="#slide2" class="btn btn-circle">❯</a>
-        </div>
       </div>
 
-      <div id="slide2" class="carousel-item relative w-full">
-        <div class="lg:flex justify-between items-center px-20 gap-4">
-          
-          <!-- image-content -->
-           <div class="lg:w-3/6">
-            <img src="images/slider/bike-2.webp" class="w-full" />
-          </div>
-          <!-- text-content -->
-          <div class="lg:w-3/6">
-            <h1 class="text-7xl font-bold mb-4">Ride-on R15 V4 <br> with Smile</h1>
-            <p class="leading-5 mb-4 w-5/6">Amet minim mollit non deserunt ullamco 
-              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-            <a class="btn btn-bg-primary text-white border-none">Purchase</a>
+      <!-- Slide 2 -->
+      <div id="slide2" class="carousel-item grid place-items-center relative w-full hero-img-2">
+        
+        <div class="flex flex-col md:flex-row items-center justify-center gap-12 px-4 lg:px-0">
 
+          <!-- Left Arrow Button -->
+          <div>
+            <a href="#slide1" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❮</a>
+          </div>
+                 
+          <!-- text-content -->
+          <div class="flex flex-col items-center text-center justify-center gap-8 lg:gap-4">
+            <h1 class="text-7xl lg:text-8xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+            <p class="mb-4 w-3/4 mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <a class="btn btn-bg-primary btn-padding">Purchase</a>
            </div>
+           
+          <!-- Right Arrow Button -->
+           <div>
+            <a href="#slide3" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❯</a>
+           </div>
+
         </div>
-        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide1" class="btn btn-circle">❮</a>
-          <a href="#slide3" class="btn btn-circle">❯</a>
+
+        
+      </div>
+ 
+      <!-- Slide 3 -->
+      <div id="slide3" class="carousel-item grid place-items-center relative w-full hero-img-3">
+        
+        <div class="flex flex-col md:flex-row items-center justify-center gap-12 px-4 lg:px-0">
+
+          <!-- Left Arrow Button -->
+          <div>
+            <a href="#slide2" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❮</a>
+          </div>
+                 
+          <!-- text-content -->
+          <div class="flex flex-col items-center text-center justify-center gap-8 lg:gap-4">
+            <h1 class="text-7xl lg:text-8xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+            <p class="mb-4 w-3/4 mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <a class="btn btn-bg-primary btn-padding">Purchase</a>
+           </div>
+           
+          <!-- Right Arrow Button -->
+           <div>
+            <a href="#slide4" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❯</a>
+           </div>
+
         </div>
+
+        
       </div>
 
-      <div id="slide3" class="carousel-item relative w-full">
-        <div class="lg:flex justify-between items-center px-20 gap-4">
-          
-          <!-- image-content -->
-           <div class="lg:w-3/6">
-            <img src="images/slider/bike-3.webp" class="w-full" />
+      <!-- Slide 4 -->
+      <div id="slide4" class="carousel-item grid place-items-center relative w-full hero-img-4">
+        
+        <div class="flex flex-col md:flex-row items-center justify-center gap-12 px-4 lg:px-0">
+
+          <!-- Left Arrow Button -->
+          <div>
+            <a href="#slide3" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❮</a>
           </div>
+                 
           <!-- text-content -->
-          <div class="lg:w-3/6">
-            <h1 class="text-7xl font-bold mb-4">Ride-on R15 V4 <br> with Smile</h1>
-            <p class="leading-5 mb-4 w-5/6">Amet minim mollit non deserunt ullamco 
-              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-            <a class="btn btn-bg-primary text-white border-none">Purchase</a>
-
+          <div class="flex flex-col items-center text-center justify-center gap-8 lg:gap-4">
+            <h1 class="text-7xl lg:text-8xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+            <p class="mb-4 w-3/4 mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <a class="btn btn-bg-primary btn-padding">Purchase</a>
            </div>
-        </div>
-        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide2" class="btn btn-circle">❮</a>
-          <a href="#slide4" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-
-      <div id="slide4" class="carousel-item relative w-full">
-        <div class="lg:flex justify-between items-center px-20 gap-4">
-          
-          <!-- image-content -->
-           <div class="lg:w-3/6">
-            <img src="images/slider/bike-4.webp" class="w-full" />
-          </div>
-          <!-- text-content -->
-          <div class="lg:w-3/6">
-            <h1 class="text-7xl font-bold mb-4">Ride-on R15 V4 <br> with Smile</h1>
-            <p class="leading-5 mb-4 w-5/6">Amet minim mollit non deserunt ullamco 
-              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-            <a class="btn btn-bg-primary text-white border-none">Purchase</a>
-
+           
+          <!-- Right Arrow Button -->
+           <div>
+            <a href="#slide1" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❯</a>
            </div>
+
         </div>
-        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide3" class="btn btn-circle">❮</a>
-          <a href="#slide1" class="btn btn-circle">❯</a>
-        </div>
+
+        
       </div>
 
     </div>
+
 
   </header>
 
