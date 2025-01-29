@@ -31,15 +31,12 @@
     }
 
     .hero-img-1{
-      background: 
+     background: 
       linear-gradient(45.0deg, 
       rgba(24, 24, 24, 0.8),
-      rgba(24, 24, 24, 0.6) 24.5%,
+      rgba(24, 24, 24, 0.6) 25%,
       rgba(24, 24, 24, 0) 100%), 
-      url('./images/slider/bg/bike-bg-1.webp');
-      background-position: center; 
-      background-repeat: no-repeat; 
-      background-size: cover;
+      url('./images/slider/bg/bike-bg-1.webp') center / cover no-repeat;
     }
     .hero-img-2{
       background: 
@@ -47,10 +44,8 @@
       rgba(24, 24, 24, 0.8),
       rgba(24, 24, 24, 0.6) 24.5%,
       rgba(24, 24, 24, 0) 100%), 
-      url('./images/slider/bg/bike-bg-2.webp');
-      background-position: center; 
-      background-repeat: no-repeat; 
-      background-size: cover;
+      url('./images/slider/bg/bike-bg-2.webp') center / cover no-repeat;
+     
     }
     .hero-img-3{
       background: 
@@ -58,10 +53,7 @@
       rgba(24, 24, 24, 0.8),
       rgba(24, 24, 24, 0.6) 24.5%,
       rgba(24, 24, 24, 0) 100%), 
-      url('./images/slider/bg/bike-bg-3.webp');
-      background-position: center; 
-      background-repeat: no-repeat; 
-      background-size: cover;
+      url('./images/slider/bg/bike-bg-3.webp') center / cover no-repeat;
     }
     .hero-img-4{
       background: 
@@ -69,10 +61,7 @@
       rgba(24, 24, 24, 0.8),
       rgba(24, 24, 24, 0.6) 24.5%,
       rgba(24, 24, 24, 0) 100%), 
-      url('./images/slider/bg/bike-bg-4.webp');
-      background-position: center; 
-      background-repeat: no-repeat; 
-      background-size: cover;
+      url('./images/slider/bg/bike-bg-4.webp') center / cover no-repeat;
     }
 
     .font-Poppins {
@@ -110,10 +99,11 @@
           </div>
           <ul
             tabindex="0"
-            class="menu menu-sm dropdown-content bg-slate-500 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><a>Item 1</a></li>
-            <li><a>Item 2</a></li>
-            <li><a>Item 3</a></li>
+            class="menu menu-sm dropdown-content bg-slate-500 rounded-box z-[1] mt-5 w-80 py-5 gap-4 shadow">
+            <li><a class="text-lg" href="#home">Home</a></li>
+            <li><a class="text-lg" href="#shop">Shop</a></li>
+            <li><a class="text-lg" href="#news">News</a></li>
+            <li><a class="text-lg" href="#contact">Contact</a></li>
           </ul>
         </div>
         <a class="btn btn-ghost text-xl">Moto Valley</a>
@@ -144,19 +134,19 @@
 
           <!-- Left Arrow Button -->
           <div>
-            <a href="#slide4" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❮</a>
+            <a href="#slide4" class="btn btn-circle bg-transparent text-white hidden md:flex text-base">❮</a>
           </div>
                  
           <!-- text-content -->
           <div class="flex flex-col items-center text-center justify-center gap-8 lg:gap-4">
-            <h1 class="text-7xl lg:text-8xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
-            <p class="mb-4 w-3/4 mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-            <a class="btn btn-bg-primary btn-padding">Purchase</a>
+            <h1 class="text-[5rem] leading-tight  md:text-8xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+            <p class="mb-4 lg:w-3/4 mx-auto md:text-xl lg:text-base ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <a class="btn btn-bg-primary text-sm ">Purchase</a>
            </div>
            
           <!-- Right Arrow Button -->
            <div>
-            <a href="#slide2" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❯</a>
+            <a href="#slide2" class="btn btn-circle bg-transparent text-white hidden md:flex text-base">❯</a>
            </div>
 
         </div>
@@ -170,23 +160,22 @@
 
           <!-- Left Arrow Button -->
           <div>
-            <a href="#slide1" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❮</a>
+            <a href="#slide1" class="btn btn-circle bg-transparent text-white hidden md:flex text-base">❮</a>
           </div>
                  
           <!-- text-content -->
           <div class="flex flex-col items-center text-center justify-center gap-8 lg:gap-4">
-            <h1 class="text-7xl lg:text-8xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
-            <p class="mb-4 w-3/4 mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-            <a class="btn btn-bg-primary btn-padding">Purchase</a>
+            <h1 class="text-7xl md:text-8xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+            <p class="mb-4 lg:w-3/4 mx-auto md:text-xl lg:text-base ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <a class="btn btn-bg-primary text-sm ">Purchase</a>
            </div>
            
           <!-- Right Arrow Button -->
            <div>
-            <a href="#slide3" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❯</a>
+            <a href="#slide3" class="btn btn-circle bg-transparent text-white hidden md:flex text-base">❯</a>
            </div>
 
         </div>
-
         
       </div>
  
@@ -197,23 +186,22 @@
 
           <!-- Left Arrow Button -->
           <div>
-            <a href="#slide2" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❮</a>
+            <a href="#slide2" class="btn btn-circle bg-transparent text-white hidden md:flex text-base">❮</a>
           </div>
                  
           <!-- text-content -->
           <div class="flex flex-col items-center text-center justify-center gap-8 lg:gap-4">
-            <h1 class="text-7xl lg:text-8xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
-            <p class="mb-4 w-3/4 mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-            <a class="btn btn-bg-primary btn-padding">Purchase</a>
+            <h1 class="text-7xl md:text-8xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+            <p class="mb-4 lg:w-3/4 mx-auto md:text-xl lg:text-base ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <a class="btn btn-bg-primary text-sm ">Purchase</a>
            </div>
            
           <!-- Right Arrow Button -->
            <div>
-            <a href="#slide4" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❯</a>
+            <a href="#slide4" class="btn btn-circle bg-transparent text-white hidden md:flex text-base">❯</a>
            </div>
 
         </div>
-
         
       </div>
 
@@ -224,23 +212,22 @@
 
           <!-- Left Arrow Button -->
           <div>
-            <a href="#slide3" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❮</a>
+            <a href="#slide3" class="btn btn-circle bg-transparent text-white hidden md:flex text-base">❮</a>
           </div>
                  
           <!-- text-content -->
           <div class="flex flex-col items-center text-center justify-center gap-8 lg:gap-4">
-            <h1 class="text-7xl lg:text-8xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
-            <p class="mb-4 w-3/4 mx-auto">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-            <a class="btn btn-bg-primary btn-padding">Purchase</a>
+            <h1 class="text-7xl md:text-8xl font-bold">Ride-on R15 V4 <br> with Smile</h1>
+            <p class="mb-4 lg:w-3/4 mx-auto md:text-xl lg:text-base ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <a class="btn btn-bg-primary text-sm ">Purchase</a>
            </div>
            
           <!-- Right Arrow Button -->
            <div>
-            <a href="#slide1" class="btn btn-circle btn-bg-primary text-2xl hidden md:flex">❯</a>
+            <a href="#slide1" class="btn btn-circle bg-transparent text-white hidden md:flex text-base">❯</a>
            </div>
 
         </div>
-
         
       </div>
 
@@ -251,6 +238,8 @@
 
   <!-- Main-Section -->
   <main>
+
+    
   </main>
 
   <!-- Footer-Section -->
