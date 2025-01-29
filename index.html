@@ -63,6 +63,14 @@
       rgba(24, 24, 24, 0) 100%), 
       url('./images/slider/bg/bike-bg-4.webp') center / cover no-repeat;
     }
+    .hero-img-5{
+      background: 
+      linear-gradient(90.0deg, 
+      rgba(24, 24, 24, 0.8),
+      rgba(24, 24, 24, 0.6) 24.5%,
+      rgba(24, 24, 24, 0) 100%), 
+      url('./images/bike/gpx-banner.webp') center / cover no-repeat;
+    }
 
     .font-Poppins {
       font-family: "Poppins", serif;
@@ -75,7 +83,7 @@
 <body class="font-Poppins">
 
   <!-- Header-Section -->
-  <header id="home" class="flex flex-col min-h-screen bg-slate-500">
+  <header id="home" class="flex flex-col   bg-slate-500">
 
     <!-- Navbar-part -->
     <nav class=" bg-slate-500 text-white lg:px-24 px-4">
@@ -125,7 +133,7 @@
     </nav>
 
     <!-- Hero-Slider -->
-    <div class="carousel flex-grow w-full text-white">
+    <div class="carousel min-h-screen w-full text-white overflow-x-hidden">
 
       <!-- Slide 1 -->
       <div id="slide1" class="carousel-item grid place-items-center relative w-full hero-img-1">
@@ -241,36 +249,166 @@
 
     <!-- feature-bike-part -->
 
-    <section  class="mt-8 md:mt-16 lg:px-24 px-4">
+    <section id="shop" class="mt-8 md:mt-16 lg:px-24 px-4 py-12 min-h-screen mx-auto flex flex-col justify-center items-center overflow-hidden">
+
       <!-- heading-content -->
-       <div class="text-center mb-12">
-        <h1 class="text-3xl md:text-5xl font-bold mb-4">Fetured Bikes In This Year</h1>
-        <p class="md:w-5/6 lg:4/6 mx-auto">Here at the Motorcycle store we can guarantee a full satisfaction of any customer that would visit our online shop. It is hard to find more reliable customer service than the one that we have. </p>
+       <div class="text-center mb-8">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4">Featured Bikes In This Year</h1>
+        <p class="md:w-5/6 lg:w-4/6 mx-auto">Here at the Motorcycle store we can guarantee a full satisfaction of any customer that would visit our online shop. It is hard to find more reliable customer service than the one that we have. </p>
+       </div>
+
+
+      <!-- image-content-->
+      <div class="hero-img-5 -mx-24 flex-1 flex flex-col justify-center items-center"> 
+
+        <!-- image-content-1 -->
+        <div class="lg:px-24 text-white py-12 px-8" >
+
+          <h1 class="text-4xl md:text-4xl font-semibold text-center mb-8"> NEW GPX Demon -2025</h1>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-16 md:px-20 lg:px-8 mb-8">
+
+          <!-- image-1 -->
+          <div class="border border-solid bg-slate-300/30 shadow-lg rounded-lg p-4 items-center ">
+            <div class="h-64 md:h-52 lg:h-64 shadow-lg rounded-xl flex justify-center items-center cursor-pointer">
+              <img class="max-w-lg mx-auto" src="images/bike/GPX/GPX-1.webp" alt="">
+            </div>
+          <h1 class="text-xl md:text-lg font-semibold text-center mt-4 rounded-md py-2 ">GPX GR165RR - GRAY</h1>
+          </div>
+
+          <!-- image-2 -->
+          <div class="border border-solid bg-slate-300/30 lg:bg-slate-600/90 shadow-lg rounded-lg p-4 items-center ">
+            <div class="h-64 md:h-52 lg:h-64 shadow-lg rounded-xl flex justify-center items-center cursor-pointer">
+              <img class="max-w-lg mx-auto" src="images/bike/GPX/GPX-3.webp" alt="">
+            </div>
+          <h1 class="text-xl md:text-lg font-semibold text-center mt-4 rounded-md py-2 ">GPX GR165RR - BLUE</h1>
+          </div>
+
+          <!-- image-3 -->
+          <div class="border border-solid bg-slate-300/30 shadow-lg rounded-lg p-4 items-center ">
+            <div class="h-64 md:h-52 lg:h-64 shadow-lg rounded-xl flex justify-center items-center cursor-pointer">
+              <img class="max-w-lg mx-auto" src="images/bike/GPX/GPX-2.webp" alt="">
+            </div>
+          <h1 class="text-xl md:text-lg font-semibold text-center mt-4 rounded-md py-2 ">GPX GR165RR - BlACK</h1>
+
+          </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- news-part -->
+    <section id="news"  class="mt-8 md:mt-16 lg:px-24 px-4 py-12 min-h-screen mx-auto flex flex-col justify-center items-center overflow-hidden">
+
+      <!-- heading-content -->
+       <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Latest News</h1>
+        <p class="mx-auto">Stay up to date with the latest news and updates from GPX</p>
        </div>
 
       <!-- image-content -->
-       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
-        <div class="border border-solid shadow-lg rounded-lg p-4 items-center border-b-indigo-50 ">
-          <div class="h-64 md:h-52 lg:h-64 shadow-lg rounded-xl">
-            <img class="w-full" src="images/feature/bike-1.webp" alt="">
+
+      <div class=" flex-1 flex flex-col justify-center items-center py-10 "> 
+
+        <!-- image-content-1 -->
+        <div class="" >
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 lg:px-8 mb-8">
+
+          <!-- news-1 -->
+          <div class="border border-solid shadow-lg rounded-lg p-4 text-center lg:text-left ">
+            <div class="h-64 md:h-52 lg:h-64 border-b flex justify-center items-center cursor-pointer">
+              <img class="max-w-lg mx-auto" src="images/bike/news/news-1-ducati.webp" alt="">
+            </div>
+          <h1 class="text-2xl md:text-lg font-semibold text-center mt-4 rounded-md py-2 ">Ducati Diavel V4</h1>
+          <p class=" text-gray-600  my-4">
+            Ducati Diavel V4 is a powerful and stylish bike that is sure to turn heads. With its sleek design and impressive performance, it's a must-have for any bike enthusiast.
+          </p>
+          <a   class = "btn btn-bg-primary text-sm ">Read More</a>
           </div>
-        <h1 class="text-xl md:text-base font-semibold text-center mt-4 rounded-md py-2 ">YAMAHA R15 V4 (Black-Blue)</h1>
-        </div>
-        <div class="border border-solid shadow-lg rounded-lg p-4 items-center border-b-indigo-50 ">
-          <div class="h-64 md:h-52 lg:h-64 shadow-lg rounded-xl">
-            <img class="w-full" src="images/feature/bike-2.webp" alt="">
+
+          <!-- news-2 -->
+          <div class="border border-solid shadow-lg rounded-lg p-4 text-center lg:text-left ">
+            <div class="h-64 md:h-52 lg:h-64 border-b flex justify-center items-center cursor-pointer">
+              <img class="w-full" src="images/bike/news/news-2-r15.webp" alt="">
+            </div>
+          <h1 class="text-2xl md:text-lg font-semibold text-center mt-4 rounded-md py-2 ">Yamaha R15 V4</h1>
+          <p class=" text-gray-600  my-4">
+            Yamaha R15 V4 is a high-performance bike that is designed for speed and agility. With its sleek design and impressive features, it's a must-have for any bike enthusiast.
+          </p>
+          <a   class = "btn btn-bg-primary text-sm ">Read More</a>
           </div>
-        <h1 class="text-xl md:text-base font-semibold text-center mt-4 rounded-md py-2 ">YAMAHA R15 V4 (Black-Red)</h1>
-        </div>
-        <div class="border border-solid shadow-lg rounded-lg p-4 items-center border-b-indigo-50 ">
-          <div class="h-64 md:h-52 lg:h-64 shadow-lg rounded-xl">
-            <img class="w-full" src="images/feature/bike-3.webp" alt="">
+
+          <!-- news-3 -->
+          <div class="border border-solid shadow-lg rounded-lg p-4 text-center lg:text-left ">
+            <div class="h-64 md:h-52 lg:h-64 border-b flex justify-center items-center cursor-pointer">
+              <img class="max-w-lg mx-auto" src="images/bike/news/news-3-GPX.webp" alt="">
+            </div>
+          <h1 class="text-2xl md:text-lg font-semibold text-center mt-4 rounded-md py-2 ">GPX Demon GR165RR - DA CORSA</h1>
+          <p class=" text-gray-600  my-4">
+            GPX Demon GR165RR - DA CORSA is a high-performance bike that is designed for speed and agility. With its sleek design and impressive features, it's a must-have for any bike enthusiast.
+          </p>
+          <a   class = "btn btn-bg-primary text-sm ">Read More</a>
           </div>
-        <h1 class="text-xl md:text-base font-semibold text-center mt-4 rounded-md py-2 ">YAMAHA R15 V4 (Black-Yellow)</h1>
+
+          </div>
+
         </div>
-       </div>
+
+      </div>
+
+
     </section>
 
+    <!-- client-review-part -->
+    <section id="news"  class="mt-8 md:mt-16 lg:px-24 px-4 py-12 min-h-screen mx-auto flex flex-col justify-center items-center overflow-hidden">
+
+      <div class="carousel w-full">
+
+        <div id="item1" class="carousel-item w-full flex flex-col lg:flex-row justify-center items-center gap-12">
+          <img
+            src="images/others/latest1.png"
+            class="" />
+            <div>
+              <h1 class="text-2xl md:text-lg font-semibold text-center mt-4">
+                <a href="#" class="text-blue-600 hover:text-blue-800">Ducati Diavel V4</a>
+              </h1>
+            </div>
+        </div>
+
+        <div id="item2" class="carousel-item w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+            class="w-full" />
+        </div>
+
+        <div id="item3" class="carousel-item w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+            class="w-full" />
+        </div>
+
+        <div id="item4" class="carousel-item w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+            class="w-full" />
+        </div>
+
+      </div>
+
+      <div class="flex w-full justify-center gap-2 py-2">
+        <a href="#item1" class="btn btn-xs">1</a>
+        <a href="#item2" class="btn btn-xs">2</a>
+        <a href="#item3" class="btn btn-xs">3</a>
+        <a href="#item4" class="btn btn-xs">4</a>
+      </div>
+
+    </section>
     
   </main>
 
