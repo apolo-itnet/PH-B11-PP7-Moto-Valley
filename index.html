@@ -71,6 +71,14 @@
       rgba(24, 24, 24, 0) 100%), 
       url('./images/bike/gpx-banner.webp') center / cover no-repeat;
     }
+    .client-banner-img-5{
+      background: 
+      linear-gradient(90.0deg, 
+      rgba(24, 24, 24, 0.8),
+      rgba(24, 24, 24, 0.6) 24.5%,
+      rgba(24, 24, 24, 0) 100%), 
+      url('./images/bike/Ducati-banner.webp') center / cover no-repeat;
+    }
 
     .font-Poppins {
       font-family: "Poppins", serif;
@@ -247,7 +255,7 @@
   <!-- Main-Section -->
   <main>
 
-    <!-- feature-bike-part -->
+    <!-- feature-bike-part --> 
 
     <section id="shop" class="mt-8 md:mt-16 lg:px-24 px-4 py-12 min-h-screen mx-auto flex flex-col justify-center items-center overflow-hidden">
 
@@ -303,12 +311,12 @@
 
 
     <!-- news-part -->
-    <section id="news"  class="mt-8 md:mt-16 lg:px-24 px-4 py-12 min-h-screen mx-auto flex flex-col justify-center items-center overflow-hidden">
+    <section id="news"  class="mt-8 md:mt-16 lg:px-24 px-4 py-12 min-h-[50vh] mx-auto flex flex-col justify-center items-center overflow-hidden">
 
       <!-- heading-content -->
        <div class="text-center">
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Latest News</h1>
-        <p class="mx-auto">Stay up to date with the latest news and updates from GPX</p>
+        <p class="mx-auto">Stay up to date with the latest news and updates from GPX  </p>
        </div>
 
       <!-- image-content -->
@@ -366,37 +374,80 @@
     </section>
 
     <!-- client-review-part -->
-    <section id="news"  class="mt-8 md:mt-16 lg:px-24 px-4 py-12 min-h-screen mx-auto flex flex-col justify-center items-center overflow-hidden">
+    <section id="reivew" class="client-banner-img-5"  >
 
-      <div class="carousel w-full">
+      <div class=" lg:w-9/12 p-8 mx-auto flex flex-col justify-center items-center overflow-hidden"> 
 
-        <div id="item1" class="carousel-item w-full flex flex-col lg:flex-row justify-center items-center gap-12">
-          <img
-            src="images/others/latest1.png"
-            class="" />
-            <div>
-              <h1 class="text-2xl md:text-lg font-semibold text-center mt-4">
-                <a href="#" class="text-blue-600 hover:text-blue-800">Ducati Diavel V4</a>
-              </h1>
-            </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Client <span class="text-orange-500">REVIEW</span> </h1>
+
+      <div class="carousel w-full mb-4 items-center overflow-hidden">
+
+        <!-- client-1 -->
+        <div id="item1" class="carousel-item w-full grid md:grid-cols-2 place-items-center text-center gap-10 md:gap-0 md:text-left pt-8">
+
+          <!-- image-part -->
+          <div class="flex justify-center items-center">
+            <img src="images/review/review-1.webp" class="border border-solid rounded-lg w-9/12"/> 
+          </div>
+
+          <!-- text-part -->
+          <div class="border-2 border-solid bg-slate-800/50 text-white shadow-lg rounded-lg p-4 items-center">
+              <p class=" my-4 mx-auto text-justify text-sm leading-7">A muscular power cruiser with an impressive 1158cc V4 Granturismo engine. Features a striking design, premium electronics, and top-notch riding aids.<span class="hidden lg:flex">Blends cruiser comfort with sport-bike like performance and handling. Lightweight chassis and advanced suspension enhance ride quality. Perfect for those who want a mix of power, luxury, and road presence.</span></p>
+              <h1 class="text-2xl md:text-2xl font-semibold mt-4"><a href="#" class="text-gray-50">Pushpa The Flower MAN</a></h1>
+              <h1 class="text-2xl md:text-lg font-semibold mt-4"><a href="#" class="text-green-600 ">Biker</a></h1>
+          </div>
+
         </div>
 
-        <div id="item2" class="carousel-item w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-            class="w-full" />
+        <!-- client-2 -->
+        <div id="item2" class="carousel-item w-full grid md:grid-cols-2 place-items-center text-center gap-10 md:gap-0 md:text-left pt-8">
+
+          <!-- image-part -->
+          <div class="flex justify-center items-center">
+            <img src="images/review/review-2.webp" class="border border-solid rounded-lg w-9/12"/> 
+          </div>
+
+          <!-- text-part -->
+          <div class="border-2 border-solid bg-slate-800/50 text-white shadow-lg rounded-lg p-4 items-center">
+              <p class=" my-4 mx-auto text-justify text-sm leading-7">A muscular power cruiser with an impressive 1158cc V4 Granturismo engine. Features a striking design, premium electronics, and top-notch riding aids.<span class="hidden lg:flex">Blends cruiser comfort with sport-bike like performance and handling. Lightweight chassis and advanced suspension enhance ride quality. Perfect for those who want a mix of power, luxury, and road presence.</span></p>
+              <h1 class="text-2xl md:text-2xl font-semibold mt-4"><a href="#" class="text-gray-50">Ragini</a></h1>
+              <h1 class="text-2xl md:text-lg font-semibold mt-4"><a href="#" class="text-green-600 ">Biker</a></h1>
+          </div>
+
         </div>
 
-        <div id="item3" class="carousel-item w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-            class="w-full" />
+        <!-- client-3 -->
+        <div id="item3" class="carousel-item w-full grid md:grid-cols-2 place-items-center text-center gap-10 md:gap-0 md:text-left pt-8">
+
+          <!-- image-part -->
+          <div class="flex justify-center items-center">
+            <img src="images/review/review-3.webp" class="border border-solid rounded-lg w-9/12"/> 
+          </div>
+
+          <!-- text-part -->
+          <div class="border-2 border-solid bg-slate-800/50 text-white shadow-lg rounded-lg p-4 items-center">
+              <p class=" my-4 mx-auto text-justify text-sm leading-7">A muscular power cruiser with an impressive 1158cc V4 Granturismo engine. Features a striking design, premium electronics, and top-notch riding aids.<span class="hidden lg:flex">Blends cruiser comfort with sport-bike like performance and handling. Lightweight chassis and advanced suspension enhance ride quality. Perfect for those who want a mix of power, luxury, and road presence.</span></p>
+              <h1 class="text-2xl md:text-2xl font-semibold mt-4"><a href="#" class="text-gray-50">Sarah</a></h1>
+              <h1 class="text-2xl md:text-lg font-semibold mt-4"><a href="#" class="text-green-600 ">Biker</a></h1>
+          </div>
+
         </div>
 
-        <div id="item4" class="carousel-item w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-            class="w-full" />
+        <!-- client-4 -->
+        <div id="item4" class="carousel-item w-full grid md:grid-cols-2 place-items-center text-center gap-10 md:gap-0 md:text-left pt-8">
+
+          <!-- image-part -->
+          <div class="flex justify-center items-center">
+            <img src="images/review/review-4.webp" class="border border-solid rounded-lg w-9/12"/> 
+          </div>
+
+          <!-- text-part -->
+          <div class="border-2 border-solid bg-slate-800/50 text-white shadow-lg rounded-lg p-4 items-center">
+              <p class=" my-4 mx-auto text-justify text-sm leading-7">A muscular power cruiser with an impressive 1158cc V4 Granturismo engine. Features a striking design, premium electronics, and top-notch riding aids.<span class="hidden lg:flex">Blends cruiser comfort with sport-bike like performance and handling. Lightweight chassis and advanced suspension enhance ride quality. Perfect for those who want a mix of power, luxury, and road presence.</span></p>
+              <h1 class="text-2xl md:text-2xl font-semibold mt-4"><a href="#" class="text-gray-50">Kiara</a></h1>
+              <h1 class="text-2xl md:text-lg font-semibold mt-4"><a href="#" class="text-green-600 ">Biker</a></h1>
+          </div>
+
         </div>
 
       </div>
@@ -408,7 +459,11 @@
         <a href="#item4" class="btn btn-xs">4</a>
       </div>
 
+    </div>
+
     </section>
+
+   
     
   </main>
 
